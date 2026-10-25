@@ -46,48 +46,52 @@ function order(product){
 }
 </script>
 
-<section style="padding:30px 15px;background:#090909;color:#f5d18b;text-align:center;font-family:Georgia,serif">
-  <h2 style="font-size:32px;letter-spacing:2px">Our Attars</h2>
-  <p style="color:#d8bd86">Luxury Fragrances by Attars By Mee</p>
+ 
+<section style="padding:25px 15px;background:#090909;color:#f4d08a;text-align:center;font-family:Georgia,serif">
+  <h2 style="font-size:32px">Our Attars</h2>
+  <p>Luxury Fragrances • 6ml • Rs. 300</p>
 
-  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;max-width:900px;margin:auto">
+  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;max-width:850px;margin:auto">
 
-    <div style="background:#17130d;border:1px solid #b78b3b;border-radius:12px;padding:12px">
-      <img src="https://placehold.co/400x400/17110b/d9ad55?text=Jasmine+Rose" alt="Jasmine Rose Attar" style="width:100%;border-radius:8px">
-      <h3>Jasmine Rose</h3>
-      <p>Premium Floral Fragrance</p>
-      <p>6ml</p>
-      <b style="font-size:22px">Rs. 300</b>
+    <div style="padding:12px;background:#17130d;border:1px solid #b78b3b;border-radius:12px">
+      <img onclick="openAttar(this.src)" src="https://placehold.co/500x500/17110b/d9ad55?text=Jasmine+Rose" alt="Jasmine Rose" style="width:100%;border-radius:8px;cursor:pointer">
+      <h3>Jasmine Rose</h3><p>6ml</p><b>Rs. 300</b>
+      <p><a href="https://wa.me/923000000000?text=I%20want%20to%20order%20Jasmine%20Rose%206ml%20for%20Rs.%20300" style="display:block;margin-top:12px;padding:10px;background:#b78b3b;color:#090909;text-decoration:none;border-radius:8px;font-weight:bold">Order on WhatsApp</a></p>
     </div>
 
-    <div style="background:#17130d;border:1px solid #b78b3b;border-radius:12px;padding:12px">
-      <img src="https://placehold.co/400x400/17110b/d9ad55?text=White+Musk" alt="White Musk Attar" style="width:100%;border-radius:8px">
-      <h3>White Musk</h3>
-      <p>Soft & Clean Fragrance</p>
-      <p>6ml</p>
-      <b style="font-size:22px">Rs. 300</b>
+    <div style="padding:12px;background:#17130d;border:1px solid #b78b3b;border-radius:12px">
+      <img onclick="openAttar(this.src)" src="https://placehold.co/500x500/17110b/d9ad55?text=White+Musk" alt="White Musk" style="width:100%;border-radius:8px;cursor:pointer">
+      <h3>White Musk</h3><p>6ml</p><b>Rs. 300</b>
+      <p><a href="https://wa.me/923000000000?text=I%20want%20to%20order%20White%20Musk%206ml%20for%20Rs.%20300" style="display:block;margin-top:12px;padding:10px;background:#b78b3b;color:#090909;text-decoration:none;border-radius:8px;font-weight:bold">Order on WhatsApp</a></p>
     </div>
 
-    <div style="background:#17130d;border:1px solid #b78b3b;border-radius:12px;padding:12px">
-      <img src="https://placehold.co/400x400/17110b/d9ad55?text=Oud+Al+Arab" alt="Oud Al Arab Attar" style="width:100%;border-radius:8px">
-      <h3>Oud Al Arab</h3>
-      <p>Woody & Royal Fragrance</p>
-      <p>6ml</p>
-      <b style="font-size:22px">Rs. 300</b>
+    <div style="padding:12px;background:#17130d;border:1px solid #b78b3b;border-radius:12px">
+      <img onclick="openAttar(this.src)" src="https://placehold.co/500x500/17110b/d9ad55?text=Oud+Al+Arab" alt="Oud Al Arab" style="width:100%;border-radius:8px;cursor:pointer">
+      <h3>Oud Al Arab</h3><p>6ml</p><b>Rs. 300</b>
+      <p><a href="https://wa.me/923000000000?text=I%20want%20to%20order%20Oud%20Al%20Arab%206ml%20for%20Rs.%20300" style="display:block;margin-top:12px;padding:10px;background:#b78b3b;color:#090909;text-decoration:none;border-radius:8px;font-weight:bold">Order on WhatsApp</a></p>
     </div>
 
-    <div style="background:#17130d;border:1px solid #b78b3b;border-radius:12px;padding:12px">
-      <img src="https://placehold.co/400x400/071a29/68c8ef?text=Blue+Ocean" alt="Blue Ocean Attar" style="width:100%;border-radius:8px">
-      <h3>Blue Ocean</h3>
-      <p>Fresh & Aquatic Fragrance</p>
-      <p>6ml</p>
-      <b style="font-size:22px">Rs. 300</b>
+    <div style="padding:12px;background:#17130d;border:1px solid #b78b3b;border-radius:12px">
+      <img onclick="openAttar(this.src)" src="https://placehold.co/500x500/071a29/68c8ef?text=Blue+Ocean" alt="Blue Ocean" style="width:100%;border-radius:8px;cursor:pointer">
+      <h3>Blue Ocean</h3><p>6ml</p><b>Rs. 300</b>
+      <p><a href="https://wa.me/923000000000?text=I%20want%20to%20order%20Blue%20Ocean%206ml%20for%20Rs.%20300" style="display:block;margin-top:12px;padding:10px;background:#b78b3b;color:#090909;text-decoration:none;border-radius:8px;font-weight:bold">Order on WhatsApp</a></p>
     </div>
 
   </div>
 </section>
 
-    
+<div id="attarViewer" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;background:#000e;z-index:9999;align-items:center;justify-content:center;padding:20px;cursor:pointer">
+  <span style="position:absolute;right:25px;top:15px;color:white;font-size:36px">×</span>
+  <img id="attarLarge" alt="Large attar image" style="max-width:95%;max-height:85vh;object-fit:contain">
+</div>
+
+<script>
+function openAttar(src) {
+  document.getElementById('attarLarge').src = src;
+  document.getElementById('attarViewer').style.display = 'flex';
+}
+</script>
+   
 
   
 
